@@ -63,7 +63,7 @@ ggplot(data_viz, aes(x = reorder(STATION, Week_Total_Entries), y = Week_Total_En
     coord_flip() +
   scale_y_continuous(labels = scales::comma) +
   theme(text = element_text(size = 10)) +
-  labs(title = "Top 20 Busiest Stations for Week Ending 7/6/2018",
+  labs(title = "20 Stations for Week Ending 7/6/2018",
        subtitle = "Total turnstile entries at each station. Data courtesty of mta.info",
        caption = "mdac",
        x = "Station",
@@ -93,8 +93,8 @@ ggplot(data_viz_low, aes(x = reorder(STATION, -Total_traffic), y = Total_traffic
   coord_flip() +
   scale_y_continuous(labels = scales::comma) +
   theme(text = element_text(size = 10)) +
-  labs(title = "Top 20 Least Busy Stations for Week Ending 7/6/2018",
-       subtitle = "Summation of all turnstile entries and exits at each station. Data courtesty of mta.info",
+  labs(title = "20 Slowest Stations for Week Ending 7/6/2018",
+       subtitle = "Total turnstile entries and exits. Data courtesty of mta.info",
        caption = "mdac",
        x = "Station",
        y = "Entries per station") 
